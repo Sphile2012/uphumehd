@@ -3,14 +3,26 @@ import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail, Sparkles } from "lucide-react";
 
 const PROFILE_PHOTO = "https://media.base44.com/images/public/user_6971b3bc769db4b08518a023/1acc20bfe_WhatsAppImage2026-03-01at190152.jpg";
-const BG = "https://media.base44.com/images/public/69b953316c6a6f44abed30f4/908c63b8c_generated_image.png";
+const BG_VIDEO = "/videos/tech-bg.mp4"; // Video background
+const BG_IMAGE = "/images/tech-bg.jpg"; // Fallback image background
 
 export default function HeroSection() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden font-inter">
-      {/* BG */}
+      {/* Video Background */}
       <div className="absolute inset-0">
-        <img src={BG} alt="" className="w-full h-full object-cover" />
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline 
+          className="w-full h-full object-cover"
+          poster={BG_IMAGE}
+        >
+          <source src={BG_VIDEO} type="video/mp4" />
+          {/* Fallback to image if video doesn't load */}
+          <img src={BG_IMAGE} alt="" className="w-full h-full object-cover" />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-b from-[#0d0a1e]/70 via-[#0d0a1e]/60 to-[#0d0a1e]" />
       </div>
 

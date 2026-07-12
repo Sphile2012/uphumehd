@@ -1,39 +1,27 @@
-**Welcome to your Base44 project** 
+# Portfolio Website
 
-**About**
+A modern portfolio website showcasing projects and skills.
 
-View and Edit  your app on [Base44.com](http://Base44.com) 
-
-This project contains everything you need to run your app locally.
-
-**Edit the code in your local development environment**
-
-Any change pushed to the repo will also be reflected in the Base44 Builder.
-
-**Prerequisites:** 
+## Prerequisites
 
 1. Clone the repository using the project's Git URL 
 2. Navigate to the project directory
 3. Install dependencies: `npm install`
-4. Create an `.env.local` file and set the right environment variables
 
-```
-VITE_BASE44_APP_ID=your_app_id
-VITE_BASE44_APP_BASE_URL=your_backend_url
+## Running the App
 
-e.g.
-VITE_BASE44_APP_ID=cbef744a8545c389ef439ea6
-VITE_BASE44_APP_BASE_URL=https://my-to-do-list-81bfaad7.base44.app
-```
+Run the development server: `npm run dev`
 
-Run the app: `npm run dev`
+## Building for Production
 
-**Publish your changes**
+Build the app: `npm run build`
 
-Open [Base44.com](http://Base44.com) and click on Publish.
+Preview the production build: `npm run preview`
 
-**Docs & Support**
+## Available Scripts
 
-Documentation: [https://docs.base44.com/Integrations/Using-GitHub](https://docs.base44.com/Integrations/Using-GitHub)
-
-Support: [https://app.base44.com/support](https://app.base44.com/support)
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run linter
+- `npm run lint:fix` - Fix linting issues

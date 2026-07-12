@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 import { GraduationCap, Award, Briefcase, MapPin } from "lucide-react";
 
 const stats = [
-  { icon: GraduationCap, label: "Degree", value: "BSc Mathematical Sciences", sub: "UNISA – Applied Math & CS", color: "from-violet-500 to-purple-600" },
-  { icon: Award, label: "Certificate", value: "Software Development", sub: "Zaio Coding School · Alison", color: "from-cyan-500 to-blue-600" },
+  { icon: GraduationCap, label: "Education", value: "BSc Mathematical Sciences", sub: "UNISA – Applied Mathematics & Computer Science", color: "from-violet-500 to-purple-600" },
+  { icon: Award, label: "Certificate", value: "Software Development", sub: "Zaio Coding School · Alison Certified", color: "from-cyan-500 to-blue-600" },
   { icon: Award, label: "Certificate", value: "Generative AI", sub: "WeThinkCode", color: "from-pink-500 to-rose-600" },
-  { icon: MapPin, label: "Location", value: "South Africa", sub: "Open to remote work", color: "from-emerald-500 to-teal-600" },
+  { icon: Briefcase, label: "Experience", value: "Full-Stack Developer", sub: "React, Firebase, Modern Web", color: "from-emerald-500 to-teal-600" },
 ];
 
 export default function AboutSection() {
@@ -27,11 +27,17 @@ export default function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}
             transition={{ duration: 0.6 }} className="space-y-5">
+            <div className="glass rounded-xl p-6 border border-white/10 mb-6">
+              <h3 className="text-white font-semibold mb-2">Phunyezwa Penelope Mjoli</h3>
+              <p className="text-white/60 text-sm mb-1">Applied Mathematics & Computer Science Graduate</p>
+              <p className="text-white/60 text-sm">University of South Africa (UNISA)</p>
+            </div>
+            
             {[
-              "Recent Applied Mathematics and Computer Science graduate with strong foundations in mathematics, statistics, and problem-solving.",
+              "Recent Applied Mathematics and Computer Science graduate with strong foundations in mathematics, statistics, and analytical problem-solving.",
               "Completed intensive Software Development bootcamp at Zaio Coding School (Alison-certified) and Generative AI course at WeThinkCode, mastering modern development workflows.",
               "Built multiple full-stack applications using React, Firebase, and modern web technologies with focus on clean code, performance, and user experience.",
-              "Eager to apply my technical skills and analytical mindset in a professional environment, contributing to innovative projects and growing as a developer.",
+              "Passionate about leveraging my mathematical background and technical skills to solve real-world problems through elegant software solutions.",
             ].map((text, i) => (
               <p key={i} className="text-white/60 leading-relaxed text-base">{text}</p>
             ))}

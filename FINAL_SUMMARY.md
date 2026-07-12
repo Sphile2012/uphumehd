@@ -104,16 +104,14 @@ public/
 
 ## 🎬 WHAT YOU NEED TO DO NOW
 
-### Step 1: Add Your Background Media
-1. **Save your hooded hacker/tech video as:**
+### Step 1: Add Your Background Image
+1. **Right-click on the hacker image** (the one you showed me with the hooded figure and digital effects)
+2. **Select "Save Image As"**
+3. **Save it to this location:**
    ```
-   public/videos/tech-bg.mp4
+   c:\Users\Phumeh\Downloads\phunyezwa_portfolio\uphumehd\public\images\tech-bg.jpg
    ```
-
-2. **Save the tech image as fallback:**
-   ```
-   public/images/tech-bg.jpg
-   ```
+4. Make sure the filename is exactly: `tech-bg.jpg`
 
 ### Step 2: Test Your Site
 ```bash

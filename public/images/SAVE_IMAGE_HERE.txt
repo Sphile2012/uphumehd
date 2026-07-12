@@ -1,0 +1,12 @@
+📸 SAVE YOUR BACKGROUND IMAGE HERE
+
+1. Save the hooded hacker image (the one you showed with digital effects) as:
+   
+   tech-bg.jpg
+
+2. The full path should be:
+   c:\Users\Phumeh\Downloads\phunyezwa_portfolio\uphumehd\public\images\tech-bg.jpg
+
+3. This image will be used as the background for your homepage
+
+Right-click on your image and select "Save As" to save it in this folder.
